@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: blueviolet;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/*Color degradado del inicio*/
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #7F7FD5;  
+    background: -webkit-linear-gradient(to right, hsla(176, 69%, 54%, 0.653), hsla(219, 67%, 72%, 0.686), #7F7FD5), url(../images/persona.webp);
+    background: linear-gradient(to right, hsla(176, 69%, 54%, 0.653), hsla(219, 67%, 72%, 0.686), #7F7FD5), url(../images/persona.webp); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+    
+}
+
+nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header .textos-header{
+    text-align: center;
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: white;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+
+.contenedor-sobre-mi{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+.sobre-mi .contenido-texto{
+    width: 48%;
+}
+
+.contenido-texto h3{
+    margin-bottom: 15px;
+    padding: 0px 0px 30px 15px;
+}
+
+.contenido-texto p{
+    padding: 0px 0px 30px 15px;
+    text-align: justify;   
+}
+
+/*galería de hobbies*/
+
+.hobby{
+    background-color: rgb(237, 237, 237);
+}
+
+.galeria-hobb{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-hobb{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    height: 225px;
+}
+
+.imagen-hobb > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(219, 67%, 72%, 0.686);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: white;
+}
+
+.imagen-hobb:hover .hover-galeria{
+    transform: scale(1);
+}
